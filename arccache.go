@@ -39,6 +39,6 @@ func NewARCDriver(arccache *lru.ARCCache) cache.DriverInterface {
 	return arcCacheDriver{arccache: arccache}
 }
 
-func NewARCCache(arccache *lru.ARCCache, args ...interface{}) *cache.Cache {
+func NewARCCache(arccache *lru.ARCCache, args ...interface{}) cache.Interface {
 	return cache.New(append(args, NewARCDriver(arccache))...)
 }

@@ -39,6 +39,6 @@ func NewLRUDriver(lrucache *lru.Cache) cache.DriverInterface {
 	return lruCacheDriver{lrucache: lrucache}
 }
 
-func NewLRUCache(lrucache *lru.Cache, args ...interface{}) *cache.Cache {
+func NewLRUCache(lrucache *lru.Cache, args ...interface{}) cache.Interface {
 	return cache.New(append(args, NewLRUDriver(lrucache))...)
 }

@@ -3,8 +3,12 @@ github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/easy-cache/cache v0.0.0-20191228034744-ed4f9885e4a0 h1:EJolLDWnAqmU3FdWuo+CLR30X3Afx2nf6pBpYvovAK0=
 github.com/easy-cache/cache v0.0.0-20191228034744-ed4f9885e4a0/go.mod h1:U9jVg0zTRYlxBqdwlG1HaZV0TcxG7Hw3Yf4QSGvhhUo=
+github.com/easy-cache/cache v0.0.0-20200417031927-ca39ccc9bf84 h1:DHKk1km511Ky8w01XC1YJGIvYpFCHlXLFZXvI/amG9Y=
+github.com/easy-cache/cache v0.0.0-20200417031927-ca39ccc9bf84/go.mod h1:U9jVg0zTRYlxBqdwlG1HaZV0TcxG7Hw3Yf4QSGvhhUo=
 github.com/hashicorp/golang-lru v0.5.3 h1:YPkqC67at8FYaadspW/6uE0COsBxS2656RLEr8Bppgk=
 github.com/hashicorp/golang-lru v0.5.3/go.mod h1:iADmTwqILo4mZ8BN3D2Q6+9jd8WM5uGBxy+E8yxSoD4=
+github.com/hashicorp/golang-lru v0.5.4 h1:YDjusn29QI/Das2iO9M0BHnIbxPeyuCHsjMW+lJfyTc=
+github.com/hashicorp/golang-lru v0.5.4/go.mod h1:iADmTwqILo4mZ8BN3D2Q6+9jd8WM5uGBxy+E8yxSoD4=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+wExME=

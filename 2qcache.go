@@ -39,6 +39,6 @@ func NewQ2Driver(q2cache *lru.TwoQueueCache) cache.DriverInterface {
 	return q2CacheDriver{q2cache: q2cache}
 }
 
-func NewQ2Cache(q2cache *lru.TwoQueueCache, args ...interface{}) *cache.Cache {
+func NewQ2Cache(q2cache *lru.TwoQueueCache, args ...interface{}) cache.Interface {
 	return cache.New(append(args, NewQ2Driver(q2cache))...)
 }

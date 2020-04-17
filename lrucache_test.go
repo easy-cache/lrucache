@@ -37,7 +37,7 @@ func TestQ2Cache(t *testing.T) {
 	testInternal(t, qcd, qcc)
 }
 
-func testInternal(t *testing.T, driver cache.DriverInterface, cache *cache.Cache) {
+func testInternal(t *testing.T, driver cache.DriverInterface, cache cache.Interface) {
 	var ttl = time.Millisecond * 500
 	for key, val := range testDataMap {
 		bs, _ := json.Marshal(val)
