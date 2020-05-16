@@ -30,11 +30,6 @@ func (qcd q2CacheDriver) Del(key string) error {
 	return nil
 }
 
-func (qcd q2CacheDriver) Has(key string) (bool, error) {
-	_, ok, err := qcd.Get(key)
-	return ok, err
-}
-
 func NewQ2Driver(q2cache *lru.TwoQueueCache) cache.DriverInterface {
 	return q2CacheDriver{q2cache: q2cache}
 }

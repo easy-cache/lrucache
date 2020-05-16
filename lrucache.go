@@ -33,11 +33,6 @@ func (lcd lruCacheDriver) Del(key string) error {
 	return nil
 }
 
-func (lcd lruCacheDriver) Has(key string) (bool, error) {
-	_, ok, err := lcd.Get(key)
-	return ok, err
-}
-
 func NewLRUDriver(lrucache *lru.Cache) cache.DriverInterface {
 	return lruCacheDriver{lrucache: lrucache}
 }

@@ -30,11 +30,6 @@ func (acd arcCacheDriver) Del(key string) error {
 	return nil
 }
 
-func (acd arcCacheDriver) Has(key string) (bool, error) {
-	_, ok, err := acd.Get(key)
-	return ok, err
-}
-
 func NewARCDriver(arccache *lru.ARCCache) cache.DriverInterface {
 	return arcCacheDriver{arccache: arccache}
 }

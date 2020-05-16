@@ -49,9 +49,10 @@ func testInternal(t *testing.T, driver cache.DriverInterface, cache cache.Interf
 		assert.Equal(t, bs, nbs)
 
 		assert.Nil(t, driver.Del(key))
-		ok, err = driver.Has(key)
-		assert.Nil(t, err)
+
+		_, ok, err = driver.Get(key)
 		assert.False(t, ok)
+		assert.Nil(t, err)
 	}
 
 	var tmp []string
