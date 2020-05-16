@@ -17,6 +17,9 @@ func (lcd lruCacheDriver) Get(key string) ([]byte, bool, error) {
 		return nil, false, nil
 	}
 	bs, ok := item.(*cache.Item).GetValue()
+	if ok == false {
+		_ = lcd.Del(key)
+	}
 	return bs, ok, nil
 }
 
