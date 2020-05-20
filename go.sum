@@ -8,6 +8,8 @@ github.com/easy-cache/cache v0.0.0-20200417031927-ca39ccc9bf84 h1:DHKk1km511Ky8w
 github.com/easy-cache/cache v0.0.0-20200417031927-ca39ccc9bf84/go.mod h1:U9jVg0zTRYlxBqdwlG1HaZV0TcxG7Hw3Yf4QSGvhhUo=
 github.com/easy-cache/cache v0.0.0-20200516035056-6d788d2ff158 h1:8OYf6DrwkOkihz2ZXytNQSeKMMOjvAD3PHQ4eBUonRs=
 github.com/easy-cache/cache v0.0.0-20200516035056-6d788d2ff158/go.mod h1:H2eT1hRRUknJuMHVNn6PjH3ecupZTK1wN1/koGEamUs=
+github.com/easy-cache/cache v0.0.0-20200520023314-97a12c60426a h1:BBmCmdd3k4tpCQpuT9jiTh8vyvGFazJpG1f/ZOfk0ps=
+github.com/easy-cache/cache v0.0.0-20200520023314-97a12c60426a/go.mod h1:H2eT1hRRUknJuMHVNn6PjH3ecupZTK1wN1/koGEamUs=
 github.com/hashicorp/golang-lru v0.5.3 h1:YPkqC67at8FYaadspW/6uE0COsBxS2656RLEr8Bppgk=
 github.com/hashicorp/golang-lru v0.5.3/go.mod h1:iADmTwqILo4mZ8BN3D2Q6+9jd8WM5uGBxy+E8yxSoD4=
 github.com/hashicorp/golang-lru v0.5.4 h1:YDjusn29QI/Das2iO9M0BHnIbxPeyuCHsjMW+lJfyTc=

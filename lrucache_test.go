@@ -57,12 +57,12 @@ func testInternal(t *testing.T, driver cache.DriverInterface, cache cache.Interf
 
 	var tmp []string
 	for key, val := range testDataMap {
-		assert.True(t, cache.Set(key, val, ttl))
-		assert.True(t, cache.Get(key, &tmp))
+		assert.Nil(t, cache.Set(key, val, ttl))
+		assert.Nil(t, cache.Get(key, &tmp))
 		assert.EqualValues(t, val, tmp)
 
 		time.Sleep(ttl)
 
-		assert.False(t, cache.Has(key))
+		assert.NotNil(t, cache.Has(key))
 	}
 }
