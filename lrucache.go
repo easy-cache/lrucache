@@ -4,7 +4,7 @@ import (
 	"time"
 
 	"github.com/easy-cache/cache"
-	"github.com/hashicorp/golang-lru"
+	lru "github.com/hashicorp/golang-lru"
 )
 
 type lruCacheDriver struct {
@@ -39,4 +39,9 @@ func NewLRUDriver(lrucache *lru.Cache) cache.DriverInterface {
 
 func NewLRUCache(lrucache *lru.Cache, args ...interface{}) cache.Interface {
 	return cache.New(append(args, NewLRUDriver(lrucache))...)
+}
+
+func NewLRUCache2(size int, args ...interface{}) cache.Interface {
+	lruCache, _ := lru.New(size)
+	return NewLRUCache(lruCache, args...)
 }
